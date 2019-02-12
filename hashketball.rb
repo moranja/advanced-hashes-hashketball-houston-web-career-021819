@@ -195,13 +195,14 @@ def player_numbers (team_name)
           end
         end
       elsif high_level == team_name
+        return "test"
         check_val = 1
         
         
       end
     end
   end
-  player_number_array
+ # player_number_array
 end
   
   
