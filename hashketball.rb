@@ -159,7 +159,7 @@ def team_colors (team_name)
         check_val = true
       end
       if check_val == true
-        return high_level[:colors]
+        return "test"
         break
       end
     end
