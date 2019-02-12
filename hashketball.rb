@@ -135,6 +135,25 @@ def num_points_scored (player_name)
 end
 
   
+def shoe_size (player_name)
+  player_name_with_underscores = player_name.sub " ", "_"
+  player_name_symbol = :"#{player_name_with_underscores}"
+  game_hash.each do |home_away, home_away_values|
+    home_away_values.each do |high_level, info|
+      if high_level == :players
+        info.each do |player_names, player_stats|
+          if player_names == player_name_symbol
+            return player_stats[:shoe]
+            break
+          end
+        end
+      end
+    end
+  end
+end
+
+  
+  
   
   
   
