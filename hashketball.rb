@@ -189,7 +189,7 @@ def player_numbers (team_name)
       elsif check_val == 2
         info.each do |players, player_stats|
           player_stats.each do |stat_key, stat_value|
-            if stat_key == number
+            if stat_key == :number
               player_number_array << stat_value
             end
           end
