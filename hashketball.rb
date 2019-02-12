@@ -184,9 +184,9 @@ def player_numbers (team_name)
   check_val = 0
   game_hash.each do |home_away, home_away_values|
     home_away_values.each do |high_level, info|
-      if check_val = 1
+      if check_val == 1
         check_val += 1
-      elsif check_val = 2
+      elsif check_val == 2
         info.each do |players, player_stats|
           player_stats.each do |stat_key, stat_value|
             if stat_key == number
