@@ -194,10 +194,11 @@ def player_numbers (team_name)
             end
           end
         end
-      elsif high_level == team_name
-        check_val = 1
-        return "test"
-        
+      elsif high_level == :team_name
+        if info == team_name
+          check_val = 1
+          return "test"
+        end
       end
     end
   end
