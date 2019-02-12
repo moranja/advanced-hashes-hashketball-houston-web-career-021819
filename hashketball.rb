@@ -120,14 +120,10 @@ end
 def num_points_scored (player_name)
   player_name_with_underscores = player_name.sub " ", "_"
   player_name_symbol = :"#{player_name_with_underscores}"
-  #binding.pry
   game_hash.each do |home_away, home_away_values|
-    #binding.pry
     home_away_values.each do |high_level, info|
-    #binding.pry
       if high_level == :players
         info.each do |player_names, player_stats|
-    #binding.pry
           if player_names == player_name_symbol
             return player_stats[:points]
             break
@@ -138,26 +134,6 @@ def num_points_scored (player_name)
   end
 end
 
-def shoe_size (player_name)
-  game_hash.each do |home_away, home_away_values|
-    #binding.pry
-    home_away_values.each do |high_level, info|
-    #binding.pry
-      if high_level == :players
-        info.each do |player_names, player_stats|
-    #binding.pry
-          if player_names == player_name
-            return player_name[:shoe]
-            break
-          end
-        end
-      end
-    end
-  end
-end
-  
-  
-  
   
   
   
