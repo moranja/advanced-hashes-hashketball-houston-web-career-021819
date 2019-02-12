@@ -129,7 +129,7 @@ def num_points_scored (player_name)
         info.each do |player_names, player_stats|
     #binding.pry
           if player_names == player_name_symbol
-            return player_names[:points]
+            return "player_names[:points]"
             break
           end
         end
