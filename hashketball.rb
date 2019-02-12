@@ -183,7 +183,11 @@ def player_numbers (team_name)
   player_number_array = []
   game_hash.each do |home_away, home_away_values|
     home_away_values.each do |high_level, info|
+    check_val = 0
       elsif high_level == :team_name
+        check_val = 1
+        
+        
         info.each do |player_names, player_stats|
           player_stats
           end
