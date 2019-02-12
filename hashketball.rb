@@ -195,9 +195,8 @@ def player_numbers (team_name)
           end
         end
       elsif high_level == team_name
-        return "test"
         check_val = 1
-        
+        return "test"
         
       end
     end
