@@ -156,7 +156,7 @@ def team_colors (team_name)
   check_val = false
   game_hash.each do |home_away, home_away_values|
     home_away_values.each do |high_level, info|
-      if check_val == true                    #and then the next time it iterates, it outputs color
+      if check_val == true                    #a then next time it iterates, it outputs color
           return info
       elsif high_level == :team_name          
         if info == team_name             #when this line sees the correct team name
