@@ -168,15 +168,15 @@ def team_colors (team_name)
 end  
   
 def team_names ()
-  new_array = []
+  team_names_array = []
   game_hash.each do |home_away, home_away_values|
     home_away_values.each do |high_level, info|
       if high_level == :team_name 
-        new_array << info 
+        team_names_array << info 
       end
     end
   end
-  new_array
+  team_names_array
 end    
   
   
