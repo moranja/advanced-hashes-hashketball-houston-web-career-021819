@@ -153,12 +153,13 @@ def shoe_size (player_name)
 end
 
 def team_colors (team_name)
+  check_val = false
   game_hash.each do |home_away, home_away_values|
     home_away_values.each do |high_level, info|
       if high_level == :team_name
         if check_val == true
           return info
-        if info == team_name 
+        elsif info == team_name 
           check_val = true
         end
       end
