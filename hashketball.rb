@@ -202,7 +202,7 @@ def player_numbers (team_name)
       end
     end
   end
-  player_number_array
+ #player_number_array
 end
   
   
