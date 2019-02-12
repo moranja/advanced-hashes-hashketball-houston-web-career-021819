@@ -179,14 +179,13 @@ def team_names ()
   team_names_array
 end    
   
-def shoe_size (team_name)
+def player_numbers (team_name)
+  player_number_array = []
   game_hash.each do |home_away, home_away_values|
     home_away_values.each do |high_level, info|
-      if high_level == :team_name
+      elsif high_level == :team_name
         info.each do |player_names, player_stats|
-          if player_names == player_name_symbol
-            return player_stats[:shoe]
-            break
+          player_stats
           end
         end
       end
