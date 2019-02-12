@@ -120,7 +120,7 @@ end
 def num_points_scored (player_name)
   player_name_with_underscores = player_name.sub " ", "_"
   player_name_symbol = :"#{player_name_with_underscores}"
-  binding.pry
+  #binding.pry
   game_hash.each do |home_away, home_away_values|
     #binding.pry
     home_away_values.each do |high_level, info|
