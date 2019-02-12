@@ -156,7 +156,7 @@ def team_colors (team_name)
   game_hash.each do |home_away, home_away_values|
     home_away_values.each do |high_level, info|
       if high_level == :team_name
-            return info[:team_name]
+            return info[:colors]
             break
           end
         end
